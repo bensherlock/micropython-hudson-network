@@ -12,13 +12,10 @@ class HudsonSensorNodeNetwork:
         self._nm3_modem = None
         self._wdt = None
 
-
     def init_interfaces(self, nm3_modem, wdt):
         """Initialise with the NM3 Modem and WDT"""
         self._nm3_modem = nm3_modem
         self._wdt = wdt
-
-
 
     def handle_packet(self, message_packet):
         """Handle the incoming NM3 packet. """
